@@ -1,0 +1,61 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.fondoGold{
+    background-color: #F0A83E;
+    color: #fff;    
+}
+
+.lineColor{
+    background-color: #222;
+    color: #fff;    
+}
+
+h2, .fuenteBold{
+    font-weight: 700;
+}
+
+footer{
+    background-color: #3C2313;
+}
+
+.fuenteBlanca{
+    color: #fff;
+}
+
+.fuenteGris{
+    color: #8A8787;
+}
+
+.banner{
+    width: 100%;
+    height: 600px; /* PUSE ESTO PARA FORZAR LA ALTURA DEL CONTENEDOR PORQUE NO SE VEIA LA IMG*/
+    background-image: url('../img/bowl-and-pet-daities-on-green-background\ 1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.banner p{
+    color: #3C2313;
+
+}
+
+.productos{
+    font-weight: 500;
+}
+
+.productos p{
+    color: #F0A83E;
+}
+
+.productos h3{
+    background-color: whitesmoke;
+}
+
+footer i, .size{
+    color: whitesmoke;
+    font-size: 32px;
+}
