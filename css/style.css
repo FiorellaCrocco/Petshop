@@ -180,6 +180,7 @@ i{
 /* Footer */
 
 .info{
+    padding-top: 20px;
     align-items: center;
     justify-content: space-between;
     background-color: #3C2313;
@@ -205,15 +206,19 @@ i{
    overflow: hidden;
 }
 .info div div{
-    align-items: center;
+    align-items: left;
     display: flex;
     flex-direction: row;
     margin: 0;
     padding: 0;
 }
 
+.imag{
+    align-items: center !important;
+}
+
 .info div div div{
-    justify-content: center;
+    justify-content: top;
     height: 90px;
 }
 
