@@ -1,61 +1,272 @@
-body{
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
     font-family: 'Roboto', sans-serif;
-    font-weight: 400;
+    margin: 0px;
+    padding: 0px;
 }
 
-.fondoGold{
+header{
+    position: sticky;
+    top: 0px;
+}
+
+/* Estilos del Top*/
+.top{
+    align-items: center;
+    background-color: #222222;
+    color: #f3F3F3;
+    display: flex;
+    flex-direction: row;
+    font-weight: 400px;
+    height: 20px;
+    padding: 0px 86px 0px 90px;
+}
+.top p{
+    flex-grow: 1;
+}
+.top select{
+    background-color: rgba(1, 1, 1, 0);
+    border: none;
+    color: #fff;
+    margin: 0px 4px;
+}
+
+.top option{
+    color: #000;
+}
+
+
+/* Header y Nav */
+.nav-banner{
     background-color: #F0A83E;
-    color: #fff;    
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    align-items: center;
+    padding: 0px 90px;
 }
 
-.lineColor{
-    background-color: #222;
-    color: #fff;    
+.nav-banner .logo{
+    flex-grow: 1;
 }
 
-h2, .fuenteBold{
+i{
+    color: #fff;
+    font-size: 15px;
+    margin-right: 3px;
+}
+.nav-banner nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #f3F3F3;
+
+}
+.nav-banner nav p{
+    margin: 0px 10px;
+    font-size: 18px;
+}
+
+
+/*Estilos del slide*/
+.slide{
+    align-content: center; 
+    background-image: url('../img/bowl-and-pet-daities-on-green-background\ 1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 600px;
+    justify-items: end;
+}
+.slide div{
+    grid-column: 2 / 3;
+    display: flex;
+    flex-direction: column;
+    width: 365px;
+    margin-right: 11px;
+    align-items: center;
+}
+.slide div h1{
+    justify-content: center;
+    color: #3C2313;
+    background-color: #fff;
+    border-radius: 5px;
+    font-size: 28px;
+    font-weight: normal;
+    padding: 10px;
+    margin-bottom: 10px;
+    
+}
+
+.slide div p{
+    color: #3C2313;
+    margin-bottom: 20px;
+}
+
+.slide div button{
+    background-color: #F0A83E;
+    color: #fff;
+    padding: 15px 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+/*Productos Destacados*/
+
+.productos-destacados{
+    text-align: center;
+}
+.productos-destacados img{
+    margin: 20px 0 -20px 0;
+}
+.productos-destacados h2{
+    color: #3C2313;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 40px;
+    width: 100%;
+    margin: 20px 0px;
+
+}
+.productos-destacados a{
+    text-decoration: none;
+    color: #666666;
+}
+
+.muestra-productos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    margin: 40px 95px;
+}
+
+.muestra-productos .producto{
+    background-color: #FBFAF6;
+}
+.producto h3{
+    color: #3C2313;
+}
+.producto h4{
+    color: #F0A83E;
+    margin-bottom: 5px;
+}
+
+/* Suscribite */
+
+.suscribete{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #F0A83E;
+    color: #fff;
+    justify-content: space-between;
+    height: 60px;
+}
+
+.suscribete div{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    margin-left: 47px;
+    height: 40px;
+}
+
+.suscribete div p{
     font-weight: 700;
 }
 
-footer{
+/* Footer */
+
+.info{
+    align-items: center;
+    justify-content: space-between;
     background-color: #3C2313;
+    display: flex;
+    flex-direction: row;
+    height: 284px;
 }
 
-.fuenteBlanca{
+.circulo{
+    background-color: #8A8787;
+    border-radius: 50%;
+    width: 58px !important;
+    height: 57px !important;
+    z-index: 1000;
+}
+.info div{
     color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 8px 0px 8px 70px;
+    /*height: calc(284px - 12px);*/
+   overflow: hidden;
+}
+.info div div{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
 }
 
-.fuenteGris{
-    color: #8A8787;
+.info div div div{
+    justify-content: center;
+    height: 90px;
 }
 
-.banner{
-    width: 100%;
-    height: 600px; /* PUSE ESTO PARA FORZAR LA ALTURA DEL CONTENEDOR PORQUE NO SE VEIA LA IMG*/
-    background-image: url('../img/bowl-and-pet-daities-on-green-background\ 1.png');
-    background-size: cover;
-    background-repeat: no-repeat;
+.info .circulo{
+    align-items: center;
+    justify-content: center;
+}
+
+/* REVISAR ESTO PARA AJUSTAR */
+.datos-de-contacto{
+    display: flex;
+    flex-direction: column !important;
+    /*height: 90.67px !important;*/
+    /*justify-content: center !important;*/
+}
+
+.logo-footer{
+    width: 166px;
+    margin-right: 70px;
+}
+
+.bottom{
+    background-color: #222222;
     text-align: center;
+    color: #fff;
+    font-weight: bold;
+    padding: 4px;
 }
 
-.banner p{
-    color: #3C2313;
+/* RESPONSIVE */
 
-}
-
-.productos{
-    font-weight: 500;
-}
-
-.productos p{
-    color: #F0A83E;
-}
-
-.productos h3{
-    background-color: whitesmoke;
-}
-
-footer i, .size{
-    color: whitesmoke;
-    font-size: 32px;
+@media(max-width: 650px){
+    .top{
+        align-items: center;
+        background-color: #222222;
+        color: #f3F3F3;
+        display: block;
+        font-weight: 400px;
+        height: 20px;
+        padding: 0px 86px 0px 90px;
+    }
+    .top select{
+        margin: 0px 4px;
+        border: none;
+        background-color: rgba(1, 1, 1, 0);
+        color: #fff;
+    }/*
+    .top p{
+        flex-grow: 1;
+    }
+    
+    .top option{
+        color: #000;
+    }*/
+    
 }
