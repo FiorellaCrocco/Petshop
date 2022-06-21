@@ -67,6 +67,9 @@ i{
     font-size: 18px;
 }
 
+.navHeader{
+    display: none;
+}
 
 /*Estilos del slide*/
 .slide{
@@ -75,42 +78,42 @@ i{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    height: 600px;
-    justify-items: end;
+    display: flex;
+    height: 70vh;
+    justify-content: flex-end;
 }
+
 .slide div{
-    grid-column: 2 / 3;
     display: flex;
     flex-direction: column;
-    width: 365px;
-    margin-right: 11px;
+    margin-right: 1rem;
     align-items: center;
+    justify-content: center;
+    margin: 0.5rem;
 }
 .slide div h1{
-    justify-content: center;
+    /*justify-content: center;*/
     color: #3C2313;
     background-color: #fff;
-    border-radius: 5px;
-    font-size: 28px;
-    font-weight: normal;
-    padding: 10px;
-    margin-bottom: 10px;
-    
+    border-radius: .5rem;
+    font-size: 2rem;
+    font-weight: 500;    
 }
 
 .slide div p{
     color: #3C2313;
-    margin-bottom: 20px;
+    margin: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 500;
 }
 
 .slide div button{
     background-color: #F0A83E;
     color: #fff;
-    padding: 15px 10px;
+    font-size: 1rem;
+    padding: 1rem;
     border: none;
-    border-radius: 5px;
+    border-radius: 0.5rem;
 }
 
 /*Productos Destacados*/
@@ -180,13 +183,13 @@ i{
 /* Footer */
 
 .info{
-    padding-top: 20px;
+    padding-top: 2.7rem;
     align-items: center;
     justify-content: space-between;
     background-color: #3C2313;
     display: flex;
     flex-direction: row;
-    height: 284px;
+    height: 42vh;
 }
 
 .circulo{
@@ -200,10 +203,9 @@ i{
     color: #fff;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 1.3vh;
     margin: 8px 0px 8px 70px;
-    /*height: calc(284px - 12px);*/
-   overflow: hidden;
+    overflow: hidden;
 }
 .info div div{
     align-items: left;
@@ -213,13 +215,9 @@ i{
     padding: 0;
 }
 
-.imag{
-    align-items: center !important;
-}
-
 .info div div div{
     justify-content: top;
-    height: 90px;
+    height: 15.57vh;
 }
 
 .info .circulo{
@@ -244,34 +242,55 @@ i{
     background-color: #222222;
     text-align: center;
     color: #fff;
-    font-weight: bold;
+    font-weight: 500;
     padding: 4px;
 }
 
 /* RESPONSIVE */
 
 @media(max-width: 650px){
+
     .top{
-        align-items: center;
-        background-color: #222222;
-        color: #f3F3F3;
-        display: block;
-        font-weight: 400px;
-        height: 20px;
-        padding: 0px 86px 0px 90px;
+        display: none;
     }
-    .top select{
-        margin: 0px 4px;
-        border: none;
-        background-color: rgba(1, 1, 1, 0);
-        color: #fff;
-    }/*
-    .top p{
-        flex-grow: 1;
+
+    .nav-banner nav{
+        display: none;
     }
-    
-    .top option{
-        color: #000;
-    }*/
-    
+
+    .nav-banner{
+        position: sticky;
+        top: 0px;
+    }
+
+    .navHeader{
+        display: flex;
+        justify-content: right;
+    }
+
+    .muestra-productos{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 40px;
+        justify-content: center;
+    }
+
+    .logo-footer{
+        order: 0;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .info{
+        flex-direction: column;
+    }
+
+    .info div{
+        order: 1;
+    }
+
+    .info img{
+        padding-bottom: 1rem;
+        margin-top: -1.5rem;
+    }
 }
